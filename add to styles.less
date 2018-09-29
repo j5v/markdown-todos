@@ -1,0 +1,228 @@
+/* markdown-todos - paste into your styles.less file */
+
+::-webkit-scrollbar {
+  width: 6px;
+  &-track  {
+    background: rgba(0,0,0,0.2);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  }
+  &-thumb {
+    border-radius: 5px;
+    background: hsla(0,0%,100%,0.12);
+  }
+}
+
+markdown-preview-plus-view.native-key-bindings {
+  font-size: 14px; /* Default: 16px */
+  background-color: black;
+
+  /* Standard HTML tags */
+
+  & progress {
+    height: 1.75rem;
+    margin: 0 1rem -0.29rem 1rem;
+    border: 1px hsla(240,100%,80%,0.3) solid;
+  }
+
+  & li, & ul {
+    margin: 0.5em 0em;
+    line-height: 1.60;
+    color: hsl(0,0%,70%);
+  }
+
+  & code, & pre {
+    line-height: 1.35;
+  }
+
+  & a {
+    display: inline-block;
+    vertical-align: top;
+    color: hsl(0,0%,91%);
+    background-color: hsla(0,0%,80%,0.3);
+    padding: 0px 8px;
+    border-radius: 5px;
+
+    &:hover:after {
+      margin-left: 1rem;
+      content: 'LINK';
+    }
+  }
+
+  & h1, & h2, & h3 {
+    color: white;
+    text-shadow: 0 0 12px hsla(240,100%,50%,1);
+  }
+
+  & h1 {
+    font-size: 140%;
+    font-weight: 600;
+    &:first-child { margin-top: 0px; }
+  }
+  & h2 { font-size: 120%; font-weight: 600; }
+  & h3 { font-size: 105%; }
+
+
+  /* Custom tags */
+
+  & hide { display: none; }
+
+  /* link down list item - TODO: make good or remove ****/
+  & ld:before {
+    margin: 0px 0.3rem 1rem -1.0rem;
+    position: relative;
+    top: 1.2rem;
+    padding: 0 0.55rem 0.7rem 0;
+    display: flex-inline;
+    border-left: 2px dotted hsla(120,0%,70%,0.6);
+    content: '';
+  }
+
+  & tag {
+    background-color: hsla(0,0%,100%,0.05);
+    border-radius: 10rem;
+    padding: 0.1rem 0.8rem;
+    color: hsla(0,100%,80%,1);
+    font-weight: 800;
+    border: 1px solid hsla(0,0%,100%,0.05);
+    box-shadow: 0px 0px 20px hsla(0,100%,90%,0.7);
+  }
+
+  /* up, down ****/
+  & li down:before,
+  & li up:before,
+  & li now:before {
+    margin: -0em 0.2em 0 -0.8em;
+    vertical-align: baseline;
+    line-height: 1em;
+    position: relative;
+    top: 0.18em;
+    font-size: 1.7em;
+  }
+  & li up:before {
+    content: '♥';
+    color: green;
+  }
+  & li down:before {
+    content: '✖';
+    color: darkred;
+    margin-left: -0.85em;
+    margin-right: 0.1em;
+    top: 0.16em;
+    text-shadow: 3px 0px 4px black;
+  }
+
+  /* now ****/
+  & li now {
+    display: block;
+    padding: 2px 8px;
+    box-shadow: 0px 0px 20px 6px hsla(60,100%, 50%, 1);
+  }
+
+  & c {
+    height: 1.8em;
+    vertical-align: middle;
+    display: inline-block;
+    border-bottom: 2px hsla(0,0%,100%,0.2) dashed;
+    overflow: hidden;
+  }
+
+}
+
+@keyframes blink {
+    0%{color: hsl(60,100%,50%);}
+   50%{color: hsl(60,100%,100%);}
+  100%{color: hsl(60,100%,50%);}
+}
+
+
+/* Ticket markup */
+
+ti, tid, tic, tir {
+  padding: 2px 6px;
+  background: hsla(120,80%,90%,0.2);
+  color: hsla(120,0%,100%,0.80);
+  font-weight: 400;
+  margin-right: 0.25em;
+  border: 1px solid hsla(120,80%,90%,0.2);
+  border-radius: 4px;
+  letter-spacing: 0.06rem;
+  white-space: nowrap;
+  line-height: 1.9em;
+}
+tid { background: hsla(0,80%,85%,0.32) }
+tir { background: hsla(240,80%,90%,0.32) }
+tic { background: hsla(180,80%,90%,0.32) }
+
+
+blocker {
+  color: #FEE;
+  background-color: #E00;
+  padding: 2px 5px;
+  margin: 0px 2px;
+  border-radius: 4px;
+}
+blocker:hover:after {
+  margin-left: 1rem;
+  content: 'BLOCKED'
+}
+
+todo, nodo, wip, done, park {
+  display: inline-block;
+  vertical-align: top;
+  color: hsla(0,100%,100%,1);
+  padding: 2px 8px;
+  margin: 0px -5px;
+  border-radius: 6px;
+}
+todo:hover:after, nodo:hover:after, wip:hover:after, done:hover:after, park:hover:after {
+  margin-left: 1rem;
+  padding: 2px 8px;
+}
+todo {
+  color: hsla(0,100%,91%,1);
+  background-color: hsla(0,100%,80%,0.26);
+  border-left: 3px solid hsla(0,100%,61%,1);
+}
+todo:hover:after { content: 'TODO'; }
+
+nodo {
+  color: hsla(0,100%,91%,0.3);
+  background-color: hsla(0,100%,80%,0.05);
+  border-left: 3px solid hsla(0,100%,61%,0.25);
+}
+nodo:hover:after { content: 'NOT DOING'; color: hsla(0,100%,80%,1); }
+
+wip {
+  color: hsla(60,100%,91%,1);
+  background-color: hsla(60,100%,80%,0.2);
+  border-left: 3px solid hsla(60,100%,61%,1);
+}
+wip:hover:after {
+  content: 'WIP';
+  padding: 2px 8px;
+  background-color: hsla(60,100%,80%,0.1);
+}
+
+done {
+  color: hsla(120,100%,75%,0.7);
+  background-color: hsla(120,100%,90%,0.13);
+  border-left: 3px solid hsla(120,100%,65%,1);
+}
+done:hover:after {
+  content: 'DONE';
+  color: hsla(120,100%,60%,1);
+  background-color: hsla(120,100%,90%,0.1);
+  padding: 2px 8px;
+}
+
+park {
+  color: hsla(120,0%,75%,0.7);
+  background-color: hsla(120,0%,100%,0.07);
+  border-left: 3px solid hsla(120,0%,65%,1);
+}
+park:hover:after {
+  content: 'PAUSED';
+  color: hsla(120,0%,70%,1);
+  background-color: hsla(120,0%,100%,0.1);
+  padding: 2px 8px;
+}
