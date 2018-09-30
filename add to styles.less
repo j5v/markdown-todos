@@ -144,101 +144,104 @@ markdown-preview-plus-view.native-key-bindings {
     overflow: hidden;
   }
 
-}
+
+  /* Ticket markup */
+
+  & ti, & tid, & tic {
+    padding: 2px 6px;
+    background: hsla(120,80%,90%,0.2);
+    color: hsla(120,0%,100%,0.80);
+    font-weight: 400;
+    margin-right: 0.25em;
+    border: 1px solid hsla(120,80%,90%,0.2);
+    border-radius: 4px;
+    letter-spacing: 0.06rem;
+    white-space: nowrap;
+    line-height: 1.9em;
+  }
+  & tid { background: hsla(0,80%,85%,0.32) }
+  & tic { background: hsla(180,90%,90%,0.32) }
 
 
-/* Ticket markup */
+  /* Item State */
 
-ti, tid, tic, tir {
-  padding: 2px 6px;
-  background: hsla(120,80%,90%,0.2);
-  color: hsla(120,0%,100%,0.80);
-  font-weight: 400;
-  margin-right: 0.25em;
-  border: 1px solid hsla(120,80%,90%,0.2);
-  border-radius: 4px;
-  letter-spacing: 0.06rem;
-  white-space: nowrap;
-  line-height: 1.9em;
-}
-tid { background: hsla(0,80%,85%,0.32) }
-tir { background: hsla(240,80%,90%,0.32) }
-tic { background: hsla(180,90%,90%,0.32) }
+  & todo, & nodo, & wip, & done, & park {
+    display: inline-block;
+    vertical-align: top;
+    color: hsla(0,100%,100%,1);
+    padding: 3px 8px 3px 8px;
+    margin: -3px -5px 1px -5px;
+    border-radius: 6px;
+  }
+  & todo:hover:after, nodo:hover:after, wip:hover:after, done:hover:after, park:hover:after {
+    margin-left: 1rem;
+    padding: 2px 8px;
+  }
+  & todo {
+    color: hsla(@hue_todo,100%,91%,1);
+    background-color: hsla(@hue_todo,100%,80%,0.26);
+    border-left: 3px solid hsla(@hue_todo,100%,61%,1);
+  }
+  & todo:hover:after { content: 'TODO'; }
 
+  & nodo {
+    color: hsla(@hue_nodo,100%,91%,0.3);
+    background-color: hsla(@hue_nodo,100%,80%,0.05);
+    border-left: 3px solid hsla(@hue_nodo,100%,61%,0.25);
+  }
+  & nodo:hover:after { content: 'NOT DOING'; color: hsla(@hue_nodo,100%,80%,1); }
 
-/* Item State */
+  & wip {
+    color: hsla(@hue_wip,100%,91%,1);
+    background-color: hsla(@hue_wip,100%,80%,0.2);
+    border-left: 3px solid hsla(@hue_wip,100%,61%,1);
+  }
+  & wip:hover:after {
+    content: 'WIP';
+    padding: 2px 8px;
+    background-color: hsla(@hue_wip,100%,80%,0.1);
+  }
 
-todo, nodo, wip, done, park {
-  display: inline-block;
-  vertical-align: top;
-  color: hsla(0,100%,100%,1);
-  padding: 3px 8px 3px 8px;
-  margin: -3px -5px 1px -5px;
-  border-radius: 6px;
-}
-todo:hover:after, nodo:hover:after, wip:hover:after, done:hover:after, park:hover:after {
-  margin-left: 1rem;
-  padding: 2px 8px;
-}
-todo {
-  color: hsla(@hue_todo,100%,91%,1);
-  background-color: hsla(@hue_todo,100%,80%,0.26);
-  border-left: 3px solid hsla(@hue_todo,100%,61%,1);
-}
-todo:hover:after { content: 'TODO'; }
+  & done {
+    color: hsla(@hue_done,100%,75%,0.7);
+    background-color: hsla(@hue_done,100%,90%,0.13);
+    border-left: 3px solid hsla(@hue_done,100%,65%,1);
+  }
+  & done:hover:after {
+    content: 'DONE';
+    color: hsla(@hue_done,100%,60%,1);
+    background-color: hsla(@hue_done,100%,90%,0.1);
+    padding: 2px 8px;
+  }
 
-nodo {
-  color: hsla(@hue_nodo,100%,91%,0.3);
-  background-color: hsla(@hue_nodo,100%,80%,0.05);
-  border-left: 3px solid hsla(@hue_nodo,100%,61%,0.25);
-}
-nodo:hover:after { content: 'NOT DOING'; color: hsla(@hue_nodo,100%,80%,1); }
+  & park {
+    color: hsla(@hue_park,0%,75%,0.7);
+    background-color: hsla(@hue_park,0%,100%,0.07);
+    border-left: 3px solid hsla(@hue_park,0%,65%,1);
+  }
+  & park:hover:after {
+    content: 'PAUSED';
+    color: hsla(@hue_park,0%,70%,1);
+    background-color: hsla(@hue_park,0%,100%,0.1);
+    padding: 2px 8px;
+  }
 
-wip {
-  color: hsla(@hue_wip,100%,91%,1);
-  background-color: hsla(@hue_wip,100%,80%,0.2);
-  border-left: 3px solid hsla(@hue_wip,100%,61%,1);
-}
-wip:hover:after {
-  content: 'WIP';
-  padding: 2px 8px;
-  background-color: hsla(@hue_wip,100%,80%,0.1);
-}
+  /* child items */
+  & todo li, & nodo li, & wip li, & done li, & park li {
+    margin-right: 1em;
+  }
 
-done {
-  color: hsla(@hue_done,100%,75%,0.7);
-  background-color: hsla(@hue_done,100%,90%,0.13);
-  border-left: 3px solid hsla(@hue_done,100%,65%,1);
-}
-done:hover:after {
-  content: 'DONE';
-  color: hsla(@hue_done,100%,60%,1);
-  background-color: hsla(@hue_done,100%,90%,0.1);
-  padding: 2px 8px;
-}
+  /* blocker tag */
+  & blocker {
+    color: #FEE;
+    background-color: #E00;
+    padding: 2px 5px;
+    margin: 0px 2px;
+    border-radius: 4px;
+  }
+  & blocker:hover:after {
+    margin-left: 1rem;
+    content: 'BLOCKED'
+  }
 
-park {
-  color: hsla(@hue_park,0%,75%,0.7);
-  background-color: hsla(@hue_park,0%,100%,0.07);
-  border-left: 3px solid hsla(@hue_park,0%,65%,1);
-}
-park:hover:after {
-  content: 'PAUSED';
-  color: hsla(@hue_park,0%,70%,1);
-  background-color: hsla(@hue_park,0%,100%,0.1);
-  padding: 2px 8px;
-}
-
-/* Blocker tag */
-
-blocker {
-  color: #FEE;
-  background-color: #E00;
-  padding: 2px 5px;
-  margin: 0px 2px;
-  border-radius: 4px;
-}
-blocker:hover:after {
-  margin-left: 1rem;
-  content: 'BLOCKED'
 }

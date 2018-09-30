@@ -25,7 +25,6 @@
 - <ti>1234</ti> Story code `ti`
 - <tid>0010</tid> Defect code `tid`
 - <tic>0099</tic> Clarification code `tic`
-- <tir>0136</tir> R code `tir`
 - <ld><todo>link-down item `ld`
 - Mention a user with `tag` <tag>JV
 - Code `inline code`
