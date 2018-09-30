@@ -12,7 +12,7 @@ Other tags have been styled to assist with common software development tasks - s
 - markdown-preview-plus package
 
 # How to install
-Open the `.less` file, and paste it into your `styles.less` file.
+Open the `add to styles.less` file, and paste it into your `styles.less` file.
 
 Alternatively, you can paste it into an `.md` file, inside a `<style>` tag, but we recommend the `styles.less` method above.
 
