@@ -16,10 +16,6 @@
   - hidden sub-item.
 - Item without tags
 
-## Review list
-- <up>Positive `up`
-- <down>Negative / warning `down`
-
 ## Other styling
 - hidden inline: <hide>hidden</hide> with non-hidden content after.
 - <blocker>This is a blocker</blocker> `blocker`
@@ -31,6 +27,8 @@
 - <tic>0099</tic> Clarification code `tic`
 - <ld><todo>link-down item `ld`
 - Mention a user with `tag` <tag>JV
+- <up>Review positive `up`
+- <down>Review negative / warning `down`
 - Code `inline code`
 - Formatted code block
   ```JS
