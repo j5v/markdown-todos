@@ -12,9 +12,13 @@ Other tags have been styled to assist with common software development tasks - s
 - markdown-preview-plus package
 
 # How to install
-Open the `add to styles.less` file, and paste it into your `styles.less` file.
+Open the `add to styles.less` file, and paste its contents into your `styles.less` file (found in Atom's menu: File > Stylesheet...).
 
 Alternatively, you can paste it into an `.md` file, inside a `<style>` tag, but we recommend the `styles.less` method above.
 
 # What it looks like
 ![preview](example-preview.png)
+
+# Expected use
+
+This is not intended to replace job management tools (like Trello, Jira, and ServieNow Agile), but it can be helpful for ad-hoc todo lists, lists that are very fluid, or lists of quick todos.
