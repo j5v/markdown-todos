@@ -17,4 +17,4 @@ Open the `.less` file, and paste it into your `styles.less` file.
 Alternatively, you can paste it into an `.md` file, inside a `<style>` tag, but we recommend the `styles.less` method above.
 
 # What it looks like
-![preview](style-preview.png)
+![preview](example-preview.png)
