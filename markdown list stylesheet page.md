@@ -27,7 +27,7 @@
 - <tic>0099</tic> Clarification code `tic`
 - <tir>0136</tir> R code `tir`
 - <ld><todo>link-down item `ld`
-- <blink>`Blink`</blink> (WIP)
+- Mention a user with `tag` <tag>JV
 - Code `inline code`
 - Formatted code block
   ```JS
