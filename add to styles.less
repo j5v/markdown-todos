@@ -41,14 +41,10 @@ markdown-preview-plus-view.native-key-bindings {
     border-radius: 1px;
   }
 
-  & li, & ul {
+  & li {
     margin: 0.5em 0em;
     line-height: 1.60;
     color: hsl(0,0%,70%);
-  }
-
-  & ul, & ol {
-    margin-left: -1.2em;
   }
 
   & code, & pre {
@@ -64,7 +60,7 @@ markdown-preview-plus-view.native-key-bindings {
     border-radius: 5px;
 
     &:hover:after {
-      margin-left: 1rem;
+      margin-left: 1em;
       content: 'LINK';
     }
   }
@@ -89,10 +85,10 @@ markdown-preview-plus-view.native-key-bindings {
 
   /* link down list item - TODO: make good or remove ****/
   & ld:before {
-    margin: 0px 0.3rem 1rem -1.0rem;
+    margin: 0px 0.3em 1em -0.85em;
     position: relative;
-    top: 1.2rem;
-    padding: 0 0.55rem 0.7rem 0;
+    top: 1.0em;
+    padding: 0 0.55em 0.7em 0;
     display: flex-inline;
     border-left: 2px dotted hsla(120,0%,70%,0.6);
     content: '';
@@ -173,8 +169,8 @@ markdown-preview-plus-view.native-key-bindings {
     display: inline-block;
     vertical-align: top;
     color: hsla(0,100%,100%,1);
-    padding: 3px 8px 3px 8px;
-    margin: -3px -5px 1px -5px;
+    padding: 0.3em 0.8em 0.3em 0.7em;
+    margin: -0.3em -0.5em 0.2em -0.0em;
     border-radius: 6px;
   }
   & todo:hover:after, nodo:hover:after, wip:hover:after, done:hover:after, park:hover:after {
@@ -232,7 +228,7 @@ markdown-preview-plus-view.native-key-bindings {
 
   /* child items */
   & todo li, & nodo li, & wip li, & done li, & park li {
-    margin-right: 1em;
+    margin-right: 0.2em;
   }
 
   /* blocker tag */

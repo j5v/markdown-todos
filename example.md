@@ -15,7 +15,7 @@
 - <todo><c>Compacted list `c`. After first line is hidden
   - hidden sub-item.
 - Item without tags
-
+1. Numbered
 ## Other styling
 - hidden inline: <hide>hidden</hide> with non-hidden content after.
 - <blocker>This is a blocker</blocker> `blocker`
