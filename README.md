@@ -21,4 +21,4 @@ Alternatively, you can paste it into an `.md` file, inside a `<style>` tag, but 
 
 # Expected use
 
-This is not intended to replace job management tools (like Trello, Jira, and ServieNow Agile), but it can be helpful for ad-hoc todo lists, lists that are very fluid, or lists of quick todos.
+This is not intended to replace job management tools (like Trello, Jira, and ServiceNow Agile), but it can be helpful for ad-hoc todo lists, lists that are very fluid, or lists of quick todos.
