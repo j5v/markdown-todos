@@ -60,4 +60,11 @@
     box-shadow: 0px 0px 8px hsla(0,100%,90%,0.7);
   }
 
+  /* Fix some table rendering */
+  td { vertical-align: top; }
+  th { white-space: nowrap; } /* You might not want this */
+
+  /* Compact progress bars */
+  progress { width: 3rem; }  
+
 </style>
