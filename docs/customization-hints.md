@@ -2,9 +2,7 @@ You can style existing HTML tags rendered by Markdown preview.
 
 You can use custom tags and attributes with CSS.
 
-To edit faster and make list items more consistent, you can, with matching CSS:
-* use short tag names like <t> for todo, <w> for WIP, and <d> for done.
-* use one tag with different attributes like <t t> for todo, <t w> for WIP, and <t d> for done.
+Markdown processing will close any open tags, before starting a new elements. This means you can sometimes omit a closing tag.
 
 ## Markup vs Markdown
 
