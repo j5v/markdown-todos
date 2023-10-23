@@ -1,10 +1,11 @@
 `markdown-todos` gives you CSS for Markdown documents viewed in VSCode preview, to indicate the status of items in your nested todo lists.
 
+
 # Installation
 
 Find custom CSS code in the [`/src`](/src) folder.
 
-To affect only the current Markdown preview, paste the custom CSS code into a `<style>` tag in the Markdown source.
+To affect only the current Markdown preview, paste the custom CSS code into a `<style>` tag in the Markdown source. [This is what I do - j5v]
 
 To affect all Markdown previews in the current VSCode workspace, or for all VSCode workspaces:
 1. Select **File** > **Preferences** > **Settings**.
@@ -32,12 +33,20 @@ When the `simple todo.md` CSS is active, place `<todo>` tags at the beginning of
 
 To activate a live Markdown preview in VSCode, press Ctrl+Shift+V.
 
+
+# Modules
+
+## [Simple todo](src/simple-todo.md)
 ![A nested todo list, where each item has a background styled to match the state of the item. All done items are dark green, all work-in-progress items are yellow, and all todo items are dark red. Each item also contains extra text from the CSS, with the word "DONE", "WIP", or "TODO", which might be read by a screen reader.](docs/assets/simple-todo.png)
 
-
-# Other modules
+## [Priority and stars](src/priority-and-stars.md)
 ![](docs/assets/priority-and-stars.png)
+
+## [Other](src/other.md)
 ![](docs/assets/other.png)
+
+## [Jobseeker](src/jobseeker.md)
+![](docs/assets/jobseeker.png)
 
 
 # See also
