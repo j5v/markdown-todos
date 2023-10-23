@@ -19,7 +19,7 @@ You can add more than one CSS file.
 
 # Example usage
 
-When the `simple todo.md` CSS is active, place `<todo>` tags at the beginning of your item text, and progress them through yellow `<wip>`, then green `<done>` states.
+When the `simple-todo.md` CSS is active, place `<todo>` tags at the beginning of your item text, and progress them through yellow `<wip>`, then green `<done>` states.
 
 ```Markdown
 # Category
